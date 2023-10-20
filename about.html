@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(53, 18, 28);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 83px;
+            background-color: rgb(106, 34, 54);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: Right;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(231, 179, 35);
+            font-size: 1.02rem;
+        }
+
+        nav ul li a:active {
+            color: rgb(186, 177, 155);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 26px;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 40px;
+            position: relative;
+            left: -2px;
+            top: 5px;
+        }
+
+        .icon-text {
+            text-decoration: none;
+            color: white;
+        }
+
+        .icon:hover {
+            height: 43px;
+            width: 45px;
+        }
+
+        .heading {
+            margin-left: 120px;
+            margin: 70px;
+            font-size: 39px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .myimage {
+            wwidth: 524px;
+            height: 689px;
+            border-radius: 51px;
+        }
+
+        .left {
+            margin: 70px 112px;
+        }
+
+        .right {
+            position: relative;
+            width: 100%;
+            margin: 40px 60px;
+        }
+
+        .disc:hover {
+            margin: 30px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(106, 34, 54);
+            border: 9cap;
+            border-radius: 97px;
+            padding: 33px 33px;
+            border-color: black;
+        }
+
+        .disc {
+            margin: 32px;
+            background-color: rgb(140, 131, 131);
+            color: rgb(92, 30, 48);
+            border: 9cap;
+            border-radius: 97px;
+            padding: 31px 31px;
+            border-color: rgb(41, 39, 39);
+        }
+
+        .first {
+            margin: 120px 70px;
+            text-align: center;
+        }
+
+        .Academics {
+            text-align: center;
+            align-items: center;
+            margin: 100px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .vertical {
+            width: 2px;
+            height: 1350px;
+            background-color: rgb(80 80 95);
+            text-align: center;
+            position: relative;
+        }
+
+        main hr {
+            border: 0px;
+            background: rgb(106, 34, 54);
+            height: 2px;
+            margin: 50px;
+        }
+
+        .horizontal-left {
+            position: relative;
+            left: -103px;
+            margin: 70px -121px;
+            width: 220px;
+        }
+
+        .horizontal-right {
+            position: relative;
+            right: 116px;
+            margin: 81px 119px;
+            width: 201px;
+        }
+
+        .Academics h3 {
+            background-color: white;
+            color: rgb(106, 34, 54);
+            border: 3px solid rgb(163, 165, 163);
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .leftdisc {
+            margin: 26px 2px;
+            padding: 12px 19px;
+            border: 2px solid;
+            border-radius: 10px;
+            position: relative;
+            left: -70px;
+            background-image: url(discbg.jpg);
+            background-size: cover;
+        }
+
+        .leftdisc:hover {
+            margin: 28px 3px;
+            padding: 13px 21px;
+            border: 2px solid;
+            border-radius: 10px;
+            position: relative;
+            left: -70px;
+            background-image: url(bg-main2.jpg);
+            background-size: cover;
+            font-size: 1.025rem;
+        }
+
+        .rightdisc {
+            background-color: black;
+            margin: 23px -7px;
+            padding: 12px 19px;
+            border: 2px solid;
+            border-radius: 10px;
+            position: relative;
+            left: 63px;
+            background-image: url(discbg.jpg);
+            background-size: cover;
+        }
+
+        .rightdisc:hover {
+            background-color: black;
+            margin: 25px -8px;
+            padding: 13px 21px;
+            border: 2px solid;
+            border-radius: 10px;
+            position: relative;
+            left: 63px;
+            background-image: url(bg-main2.jpg);
+            background-size: cover;
+            font-size: 1.025rem;
+        }
+
+        footer {
+            background-color: rgb(85, 84, 84);
+            margin-top: 225px;
+            height: 223px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 12px 46px;
+            justify-content: space-evenly;
+        }
+
+        footer div ul li {
+            list-style: none;
+            margin-left: 800px;
+        }
+
+        footer div ul li:hover {
+            list-style: square;
+            font-size: 15px;
+            font-style: italic;
+            color: rgb(231, 214, 214);
+        }
+
+        .footer-text {
+            font-size: 23px;
+            font-style: inherit;
+        }
+
+        .footerlist {
+            padding: 5px 0;
+        }
+
+        .footer-third {
+            text-align: center;
+        }
+
+        .footer-third a {
+            text-decoration: double;
+            color: white;
+            font-size: larger;
+        }
+
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .media {
+            width: 23px;
+            height: 23px;
+            margin: 10px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="https://photos.app.goo.gl/dYiWXtKLopq7pjQk6" class="icon-text" target="_blank">
+                    <img src="me.png" class="icon"></a>
+                Arjun Developer
+            </div>
+            <div class="'right">
+                <ul>
+                    <li><a href="" target="_blank">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/arjun-jha-ba9054193/" target="_blank">About</a></li>
+                    <li><a href="skills.html" target="_blank">Projects</a></li>
+                    <li><a href="https://wa.link/q74g8n" target="_blank">Contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <h1 class="heading">About Me</h1>
+
+            <div class="about">
+                <div class="left">
+                    <img class="myimage" src="me2.jpg">
+                </div>
+
+                <div class="right">
+
+                    <div class="disc">
+                        As a second-year student of Production and Industrial Engineering at NIT Kurukshetra, I am a
+                        driven and enthusiastic learner with a passion for problem-solving and programming. My education
+                        at NIT Kurukshetra has already given me a strong foundation in key areas such as manufacturing
+                        processes, supply chain management, and quality control.
+                    </div>
+
+                    <div class="disc">
+                        In addition to my academic pursuits, I have a keen interest in programming and enjoy exploring
+                        new programming languages and tools. developing algorithms to solve mathematical problems.
+                        Through these projects, I have gained valuable experience in programming and have honed my
+                        problem-solving skills.
+                    </div>
+
+                    <div class="disc">
+                        Prior to my studies at my college, I completed my schooling at Vidya School Gurgaon, where I
+                        developed a strong foundation in core subjects such as mathematics and science. My high school
+                        education helped me to cultivate my analytical and critical thinking skills, which have proven
+                        to be valuable assets in my studies at NIT Kurukshetra.
+                    </div>
+
+                    <div class="disc">
+                        As I progress through my studies, I am eager to continue exploring my interests in programming
+                        and problem-solving, and to gain hands-on experience through internships and other
+                        opportunities. I am confident that my skills and dedication make me a strong candidate for any
+                        organization seeking a motivated and capable engineer.
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <h2 class="first">
+            Academics
+        </h2>
+        <section class="secondsection">
+
+            <div class=Academics>
+
+                <div class="vertical">
+
+                    <div class="horizontal-left">
+                        <h3>10th(2018-2019)</h3>
+                        <div class="leftdisc">
+                            I completed my 10th grade at Vidya School, Gurgaon, achieving an impressive 80.4% score in
+                            my final exams.
+
+                        </div>
+                    </div>
+                    <div class="horizontal-right">
+                        <h3>12th(2020-2021)</h3>
+                        <div class="rightdisc">
+                            I pursued the science stream at Vidya School, Gurgaon, and excelled in my 12th grade with an
+                            outstanding 86.4% score in my final examinations.
+
+                        </div>
+                    </div>
+                    <div class="horizontal-left">
+                        <h3>Drop year(2021-2022)</h3>
+                        <div class="leftdisc">
+                            After completing 12th grade at Vidya School, Gurgaon, I took a one-year gap to focus on
+                            intensive JEE exam preparation, determined to secure admission to a prestigious engineering
+                            program.
+
+                        </div>
+                    </div>
+                    <div class="horizontal-right">
+                        <h3>1st year(2022-23)</h3>
+                        <div class="rightdisc">
+                            I successfully qualified the JEE Mains exam and secured a BTech admission in Production
+                            Engineering at NIT Kurukshetra, fulfilling my academic aspirations.
+                        </div>
+                    </div>
+                    <div class="horizontal-left">
+                        <h3>2nd year(2023-Present)</h3>
+                        <div class="leftdisc">
+                            I completed my first year and am presently in the third semester of my BTech program,
+                            progressing steadily in my academic journey.
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3 class="footer-text">Arjun's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Home</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">About</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Projects</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Contact me</li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-third">
+
+
+            <div class="socialicons">
+                <a href="" class="medialink"><img src="instagram.png" class="media"></a>
+                <a href="" class="medialink"><img src="linkedin.png" class="media"></a>
+                <a href="" class="medialink"><img src="github.png" class="media"></a>
+            </div>
+            <div>
+                www.arjunportfoli.com |<a href="https://copyright.gov.in/"> &copy;</a> Copyright 2023
+            </div>
+            <div>
+                Designed by Arjun Jha
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

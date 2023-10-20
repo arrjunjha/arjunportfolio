@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(53, 18, 28);
+            color: white;
+            /* background-image: url(bg-main.jpg) ;
+            background-size: cover; */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 83px;
+            background-color: rgb(106, 34, 54);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: Right;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(231, 179, 35);
+            font-size: 1.02rem;
+        }
+
+        nav ul li a:active {
+            color: rgb(186, 177, 155);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 26px;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 40px;
+            position: relative;
+            left: -2px;
+            top: 5px;
+        }
+
+        .icon-text {
+            text-decoration: none;
+            color: white;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            background-image: url(light.png);
+            background-repeat: no-repeat;
+            background-size: 435px;
+            background-position: 159px 0px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            width: 70%;
+            height: 20px;
+            font-size: 2.75rem;
+            margin: 75px 20px;
+        }
+
+        .name {
+            color: rgb(154, 66, 56);
+            font-size: 3rem;
+            font-style: oblique;
+        }
+
+        #element {
+            color: rgb(154, 66, 56);
+        }
+
+        main hr {
+            border: 0px;
+            background: rgb(106, 34, 54);
+            height: 2px;
+            margin: 50px;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2.5rem;
+        }
+
+        .span {
+            color: rgb(154, 66, 56);
+        }
+
+        .box {
+            background: white;
+            height: 2px;
+            width: 80vw;
+            margin: 120px 0px;
+            display: flex;
+            top
+        }
+
+        .secondsection .vertical {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .wro {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -75px;
+            left: -40px;
+        }
+
+        .fll {
+            width: 100px;
+            height: 75px;
+            position: relative;
+            top: -75px;
+            left: -40px;
+
+        }
+
+        .fll:hover,
+        .wro:hover {
+            width: 103px;
+            height: 103px;
+            position: relative;
+            top: -75px;
+            left: -40px;
+        }
+
+        .wrot {
+            position: relative;
+            width: 150px;
+            left: -50px;
+            font-size: 1.25rem;
+        }
+
+        .fllt {
+            position: relative;
+            width: 150px;
+            top: 23px;
+            left: -50px;
+            font-size: 1.25rem;
+        }
+
+        .wrodisc {
+            position: relative;
+            width: 200px;
+            top: 20px;
+            left: -50px;
+            color: grey;
+        }
+
+        .wrodisc:hover {
+            position: relative;
+            width: 250px;
+            top: 20px;
+            left: -50px;
+            color: grey;
+            font-size: 20px;
+
+        }
+
+        .flldisc {
+            position: relative;
+            width: 200px;
+            top: 43px;
+            left: -50px;
+            color: grey;
+        }
+
+        .flldisc:hover {
+            position: relative;
+            width: 250px;
+            top: 43px;
+            left: -50px;
+            color: grey;
+            font-size: 20px;
+        }
+
+        .icon:hover {
+            height: 43px;
+            width: 45px;
+        }
+
+        footer {
+            background-color: rgb(85, 84, 84);
+            margin-top: 100px;
+            height: 223px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 12px 46px;
+            justify-content: space-evenly;
+        }
+
+        footer div ul li {
+            list-style: none;
+            margin-left: 800px;
+        }
+
+        footer div ul li:hover {
+            list-style: square;
+            font-size: 15px;
+            font-style: italic;
+            color: rgb(231, 214, 214);
+        }
+
+        .footer-text {
+            font-size: 23px;
+            font-style: inherit;
+        }
+
+        .footerlist {
+            padding: 5px 0;
+        }
+
+        .footer-third {
+            text-align: center;
+        }
+
+        .footer-third a {
+            text-decoration: double;
+            color: white;
+            font-size: larger;
+        }
+
+        .hr2 {
+            border: 0px;
+            background: rgb(106, 34, 54);
+            height: 1.5px;
+            margin-top: 381px;
+
+        }
+
+        .btn {
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: rgb(106, 34, 54);
+            /* border: 10px; */
+            color: white;
+            margin-top: 26px;
+            margin-left: 100px;
+            border-color: white;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            padding: 12px 31px;
+            border-radius: 11px;
+            background-color: rgb(159, 55, 84);
+            /* border: 10px; */
+            color: white;
+            margin-top: 26px;
+            margin-left: 100px;
+            border-color: white;
+            font-size: 21px;
+            cursor: grabbing;
+        }
+
+        .info {
+            cursor: help;
+        }
+
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .media {
+            width: 23px;
+            height: 23px;
+            margin: 10px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="https://photos.app.goo.gl/dYiWXtKLopq7pjQk6" class="icon-text" target="_blank">
+                    <img src="me.png" class="icon"></a>
+                Arjun Developer
+            </div>
+            <div class="'right">
+                <ul>
+                    <li><a href="portfolio.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="skills.html" target="_blank">skills</a></li>
+                    <li><a href="https://wa.link/q74g8n" target="_blank">Contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">Hey, My name is <span class="name"> Arjun </span>
+                <div>and I am a Web Developer</div>
+                <span id="element"></span>
+
+                <div class="button">
+                    <a href="https://drive.google.com/file/d/1np2fsBj-t9P6a2dnGVwRGyCEIW2Z7yU1/view?usp=sharing"
+                        target="_blank"><button class="btn">Resume</button></a>
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" height="85%">
+            </div>
+        </section>
+        <hr class="hr">
+
+        <section class="secondsection">
+            <span class="span">What I have done so far</span>
+            <h1>My Achievments</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <a href="https://www.wro2016india.org/" class="info"><img src="wro.png" class="wro"></a>
+                    <div class="wrot">
+                        World Robotics Olympiad(2016)
+                    </div>
+                    <div class="wrodisc">
+                        "Thrilling to reflect on my journey in the 2016 World Robotics Olympiad, competing in the
+                        under-15 age category. It was a mind-boggling experience that ignited my passion for robotics
+                        and innovation. 🤖🌟 #WRO2016 #YoungInnovator #RoboticsEnthusiast"
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://www.firstlegoleague.org/past-challenges" class="info"><img src="fll.png"
+                            class="fll"></a>
+                    <div class="fllt">
+                        F.L.L (Intra School-2017)
+                    </div>
+                    <div class="flldisc">
+                        In 2017, I proudly joined my school's First LEGO League intra-school robotics competition. Our
+                        hard work and dedication paid off as my team clinched not one, but two remarkable trophies. We
+                        seized the trophy for overall performance, a testament to our teamwork and innovation.
+                        Additionally, we earned the honor of "Best Presentation," showcasing our communication and
+                        problem-solving skills. A memorable journey of learning and success!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://wroindia.org/" class="info"><img src="wro.png" class="wro"></a>
+                    <div class="wrot">
+                        Indian Robotics Olympiad(2017)
+                    </div>
+                    <div class="wrodisc">
+                        Following our triumph in the First LEGO League, I delved deeper into the world of robotics. In
+                        2017, I ventured into the Indian Robotics Olympiad, where I garnered valuable experience and a
+                        participation certificate. This journey fueled my passion for robotics, and today, I am humbled
+                        to give back as a mentor to the "Vidya Robo Siksha Kendra" school robotics team. Guiding these
+                        young minds, sharing knowledge, and fostering their curiosity in STEM subjects has become a
+                        fulfilling and inspiring role in my life. Together, we're building a brighter future through the
+                        exciting world of robotics. 🤖🏅
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://www.chess.com/" class="info"><img src="chess.png" class="wro"></a>
+                    <div class="wrot">
+                        Inter-School Chess Competition(2018)
+                    </div>
+                    <div class="wrodisc">
+                        In the following year, I ventured into a different arena, participating in the Inter-School
+                        Chess Competition. This thrilling journey allowed me to test my strategic thinking and
+                        concentration on the chessboard. I am proud to share that I secured victory in two out of the
+                        four intense matches I played. It was a valuable experience that taught me the importance of
+                        patience, strategy, and the sweet taste of success in the game of chess. 🏆♟️
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr2">
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3 class="footer-text">Arjun's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Home</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">About</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Projects</li>
+                    </a>
+
+                    <a href="" class="icon-text">
+                        <li class="footerlist">Contact me</li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-third">
+
+            <div class="socialicons">
+                <a href="" class="medialink"><img src="instagram.png" class="media"></a>
+                <a href="" class="medialink"><img src="linkedin.png" class="media"></a>
+                <a href="" class="medialink"><img src="github.png" class="media"></a>
+            </div>
+            <div>www.arjunportfoli.com |<a href="https://copyright.gov.in/"> &copy;</a> Copyright 2023</div>
+            <div>Designed by Arjun Jha</div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Production Engineer', 'Invester'],
+            typeSpeed: 30,
+        });
+    </script>
+
+</body>
+
+</html>
